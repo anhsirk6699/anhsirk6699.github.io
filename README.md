@@ -1,3 +1,0 @@
-# my-portfolio
-
-## Project setup
