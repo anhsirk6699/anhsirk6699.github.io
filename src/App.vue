@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <h1>Hello, I'm Jithu!</h1>
-    <p>Welcome to my personal portfolio site.</p>
+    <landing-page></landing-page>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import landingPage from './components/portfolio/landingPage.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    landingPage
   }
 }
 </script>
@@ -26,3 +25,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+<style lang="scss">@import './assets/styles/theme.scss'</style>
