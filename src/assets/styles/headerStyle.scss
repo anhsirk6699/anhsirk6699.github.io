@@ -94,3 +94,10 @@
     margin-left: 15px;
     font-size: var(--fz-xs);
 }
+.header {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hide-header {
+    transform: translateY(-100%);
+}

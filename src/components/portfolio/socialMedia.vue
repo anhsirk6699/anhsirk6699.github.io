@@ -64,15 +64,15 @@
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="none"
-                            class="feather feather-linkedin"
                             stroke="currentColor"
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
+                            class="feather feather-linkedin"
                             role="img">
                             <title>LinkedIn</title>
-                            <path d="M16 8.06c0 1.76-1.43 3.2-3.2 3.2-1.76 0-3.2-1.43-3.2-3.2 0-1.76 1.43-3.2 3.2-3.2 1.77 0 3.2 1.43 3.2 3.2zM2 24h5V9H2v15zm7.5-15h5v15h-5V9z" />
-                            <rect x="2" y="4" width="4" height="12"/>
+                            <path d="M16 8a6 6 0 0 1 6 6v8h-4v-8a2 2 0 0 0-4 0v8h-4v-8a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
                             <circle cx="4" cy="4" r="2" />
                         </svg>
                     </a>
