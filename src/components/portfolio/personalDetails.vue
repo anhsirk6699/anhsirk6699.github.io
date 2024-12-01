@@ -24,7 +24,7 @@
     name: 'personalDetails',
     data () {
         return {
-            name : "Krishnajit Unnikrishnan"
+            name : "Krishnajith Unnikrishnan"
         }
     },
   }

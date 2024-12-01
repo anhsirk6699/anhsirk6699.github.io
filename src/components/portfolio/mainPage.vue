@@ -6,12 +6,13 @@
         <experience-details></experience-details>
         <work-and-other></work-and-other>
         <contact-details></contact-details>
+        <footer class="footer-class">
+          <social-media-mobile></social-media-mobile>
+          <div class="footer-div">
+              <div>Designed & Built by Krishnajith</div>
+          </div>
+        </footer>
       </main>
-      <footer class="footer-class">
-        <div class="footer-div">
-            <div>Designed & Built by Krishnajith</div>
-        </div>
-      </footer>
       
   </div>
 </template>
@@ -22,8 +23,9 @@ import personalDetails from './personalDetails.vue'
 import experienceDetails from './experienceDetails.vue'
 import WorkAndOther from './workAndOther.vue'
 import contactDetails from './contactDetails.vue'
+import socialMediaMobile from './socialMediaMobile.vue'
 export default {
-  components: { personalDetails, AboutMe, experienceDetails, WorkAndOther, contactDetails },
+  components: { personalDetails, AboutMe, experienceDetails, WorkAndOther, contactDetails, socialMediaMobile },
   name: 'mainPage'}
 </script>
 

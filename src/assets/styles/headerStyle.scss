@@ -101,3 +101,39 @@
 .hide-header {
     transform: translateY(-100%);
 }
+/* Responsive Styles */
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--green);
+    padding-right: 50px;
+}
+@media (max-width: 1024px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        right: 0;
+        width: 100%;
+        background-color: rgba(10, 25, 47, 0.95);
+        padding: 20px;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    ol {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}

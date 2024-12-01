@@ -67,3 +67,11 @@
     margin: 0px auto;
     background-color: var(--light-slate);
 }
+@media (max-width: 768px) {
+    .left-orientation,
+    .right-orientation {
+        display: none;
+    }
+
+    
+}

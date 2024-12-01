@@ -1,22 +1,23 @@
 <template>
     <header class="header" :class="{ 'hide-header': isHeaderHidden }">
         <nav class="navbar-header">
-            <div @click="scrollToSection('personal-details')" class="logo">A</div>
-            <div class="nav-items" style="padding-right: 50px;">
-                <ol>
-                    <li style="transition-delay: 100ms;"> <a @click="scrollToSection('about')" href="#about">About</a></li>
-                    <li style="transition-delay: 200ms;"> <a @click="scrollToSection('experience')" href="#experience">Experience</a></li>
-                    <li style="transition-delay: 300ms;"> <a @click="scrollToSection('work')" href="#work">Work</a></li>
-                    <li style="transition-delay: 400ms;"> <a @click="scrollToSection('contact')" href="#contact">Contact</a></li>
-                </ol>
-                <div style="transition-delay: 400ms;">
-                    <a class="resume-button" href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                </div>
+        <div @click="scrollToSection('personal-details')" class="logo">A</div>
+        <div class="burger-menu" @click="toggleMenu">☰</div>
+        <div class="nav-items" :class="{ active: isMenuOpen }">
+            <ol>
+            <li><a @click="scrollToSection('about')" href="#about">About</a></li>
+            <li><a @click="scrollToSection('experience')" href="#experience">Experience</a></li>
+            <li><a @click="scrollToSection('other')" href="#other">Other</a></li>
+            <li><a @click="scrollToSection('contact')" href="#contact">Contact</a></li>
+            </ol>
+            <div>
+            <a class="resume-button" href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
+        </div>
         </nav>
     </header>
 </template>
-
+  
 <script>
 export default {
     name: 'headerComponent',
@@ -24,6 +25,7 @@ export default {
         return {
             lastScrollY: 0, 
             isHeaderHidden: false, 
+            isMenuOpen: false,
         };
     },
     methods: {
@@ -34,7 +36,11 @@ export default {
                     top: element.offsetTop,
                     behavior: 'smooth'
                 });
+                this.isMenuOpen = false;
             }
+        },
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
         },
         checkInitialScroll() {
             const hash = window.location.hash.substring(1); 
