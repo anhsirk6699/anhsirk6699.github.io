@@ -22,6 +22,9 @@
     filter: none !important;
     pointer-events: auto !important;
     user-select: auto !important;
+    @media (max-width: 1024px) {
+        padding: 0px 20px !important;
+    }
 }
 .logo {
     width: 40px;
