@@ -81,3 +81,6 @@ html {
 body {
   counter-reset: section; 
 }
+* {
+    box-sizing: border-box; /* Ensure this is set globally */
+}
