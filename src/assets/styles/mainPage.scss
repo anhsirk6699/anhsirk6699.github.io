@@ -11,11 +11,11 @@ main {
     min-height: 100vh;
     padding: 200px 150px;
     @media (max-width: 1024px) {
-        padding: 100px 30px;
+        padding: 100px 30px !important;
     }
 
     @media (max-width: 768px) {
-        padding: 80px 20px;
+        padding: 80px 20px !important;
     }
 }
 .personal_details {
@@ -29,12 +29,12 @@ main {
     height: 100vh;
     padding: 0px;
     @media (max-width: 1024px) {
-        padding: 50px 0;
+        padding: 50px 0 !important;
     }
 
     @media (max-width: 768px) {
         height: auto;
-        padding: 20px 0;
+        padding: 20px 0 !important;
     }
 }
 section {
@@ -42,7 +42,7 @@ section {
     padding: 100px 0px;
     max-width: 1000px;
     @media (max-width: 768px) {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 }
 h1, h2, h3, h4, h5, h6 {
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     font-size: clamp(40px, 8vw, 80px);
     @media (max-width: 768px) {
-        font-size: clamp(32px, 6vw, 64px);
+        font-size: clamp(32px, 6vw, 64px) !important;
     }
 }
 .personal_details h3 {
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--slate);
     line-height: 0.9;
     @media (max-width: 768px) {
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
 }
 .personal_details p {
@@ -80,8 +80,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 540px;
     text-align: left;
     @media (max-width: 1024px) {
-        margin: 10px 0;
-        padding: 0 20px;
+        margin: 10px 0 !important;
+        padding: 0 20px !important; 
     }
 }
 p {
